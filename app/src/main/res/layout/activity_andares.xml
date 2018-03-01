@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diogo.testedosids.AndaresActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/a0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andar -3"/>
+    <Button
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andar -2"/>
+    <Button
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andar -1"/>
+    <Button
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andar 0"/>
+    <Button
+        android:id="@+id/a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andar 1"/>
+    <Button
+        android:id="@+id/a5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andar 2"/>
+    <Button
+        android:id="@+id/a6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andar 3"/>
+    <Button
+        android:id="@+id/se0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sala de Estudo 0"/>
+    <Button
+        android:id="@+id/se1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sala de Estudo 1"/>
+    <Button
+        android:id="@+id/se2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sala de Estudo 2"/>
+
+    <Button
+        android:id="@+id/se3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sala de Estudo 3" />
+
+</LinearLayout>
+</ScrollView>

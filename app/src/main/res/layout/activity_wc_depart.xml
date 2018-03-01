@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diogo.testedosids.wc_departActivity"
+    android:orientation="vertical"  >
+
+    <Button
+        android:id="@+id/wc0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do fundo -3"/>
+    <Button
+        android:id="@+id/wc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do -3"/>
+    <Button
+        android:id="@+id/wc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do fundo -2"/>
+    <Button
+        android:id="@+id/wc4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do -2"/>
+    <Button
+        android:id="@+id/wc5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do fundo -1"/>
+    <Button
+        android:id="@+id/wc6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do -1"/>
+    <Button
+        android:id="@+id/wc7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do fundo 0"/>
+    <Button
+        android:id="@+id/wc8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do 0"/>
+    <Button
+        android:id="@+id/wc9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do fundo 1"/>
+    <Button
+        android:id="@+id/wc10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do 1"/>
+    <Button
+        android:id="@+id/wc11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do fundo 2"/>
+    <Button
+        android:id="@+id/wc12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do 2"/>
+    <Button
+        android:id="@+id/wc13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do fundo 3"/>
+    <Button
+        android:id="@+id/wc14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WC do 3"/>
+</LinearLayout>
+</ScrollView>

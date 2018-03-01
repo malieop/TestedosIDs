@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diogo.testedosids.MainActivity"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/Andar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andar"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <Button
+        android:id="@+id/SalaEstudo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sala de Estudo"/>
+    <Button
+        android:id="@+id/WC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Casa De Banho"
+        />
+    <Button
+        android:id="@+id/Biblio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biblioteca"/>
+    <Button
+        android:id="@+id/Depart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Departamentos"/>
+    <Button
+        android:id="@+id/Bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bar"/>
+
+</LinearLayout>
