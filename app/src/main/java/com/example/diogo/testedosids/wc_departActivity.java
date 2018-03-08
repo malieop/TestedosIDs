@@ -17,7 +17,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC fundo -3",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC fundo -3",getApplicationContext());
             }
         });
         final Button wc_3 = findViewById(R.id.wc1);
@@ -25,7 +25,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC -3",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC -3",getApplicationContext());
             }
         });
         final Button wcFundo_2 = findViewById(R.id.wc3);
@@ -33,7 +33,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC fundo -2",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC fundo -2",getApplicationContext());
             }
         });
         final Button wc_2 = findViewById(R.id.wc4);
@@ -41,7 +41,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC -2",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC -2",getApplicationContext());
             }
         });
         final Button wcFundo_1 = findViewById(R.id.wc5);
@@ -49,7 +49,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC fundo -1",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC fundo -1",getApplicationContext());
             }
         });
         final Button wc_1 = findViewById(R.id.wc6);
@@ -57,7 +57,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC -1",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC -1",getApplicationContext());
             }
         });
         final Button wcFundo0 = findViewById(R.id.wc7);
@@ -65,7 +65,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC fundo 0",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC fundo 0",getApplicationContext());
             }
         });
         final Button wc0 = findViewById(R.id.wc8);
@@ -73,7 +73,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC 0",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC 0",getApplicationContext());
             }
         });
         final Button wcFundo1 = findViewById(R.id.wc9);
@@ -81,7 +81,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC fundo 1",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC fundo 1",getApplicationContext());
             }
         });
         final Button wc1 = findViewById(R.id.wc10);
@@ -89,7 +89,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC 1",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC 1",getApplicationContext());
             }
         });
         final Button wcFundo2 = findViewById(R.id.wc11);
@@ -97,7 +97,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC fundo 2",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC fundo 2",getApplicationContext());
             }
         });
         final Button wc2 = findViewById(R.id.wc12);
@@ -105,7 +105,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC 2",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC 2",getApplicationContext());
             }
         });
         final Button wcFundo3 = findViewById(R.id.wc13);
@@ -113,7 +113,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC fundo 3",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC fundo 3",getApplicationContext());
             }
         });
         final Button wc3 = findViewById(R.id.wc14);
@@ -121,7 +121,7 @@ public class wc_departActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "WC 3",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "WC 3",getApplicationContext());
             }
         });
 

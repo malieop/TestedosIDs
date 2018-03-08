@@ -14,10 +14,10 @@ import java.io.File;
  * Created by diogo on 23-02-2018.
  */
 
-public class DBManager  {
+public final class DBManager  {
    // Variáveis estáticas
     private static final int DATABASE_VERSION = 1 ;
-    private static final String DB_NAME = "redes";
+    private static final String DB_NAME = "redes.db";
     private static final String NOME_TABELA = "Informação_das_redes";
 
     //Colunas da tabela
@@ -47,6 +47,15 @@ public class DBManager  {
             e.printStackTrace();
         }
     }
+    public static class DBHolder {
+        public static final DBManager INSTANCE = new DBManager();
+    }
+
+    public static DBManager getDBManager(){
+
+        return DBHolder.INSTANCE;
+    }
+
 
     public static void initDatabase(){
         try{
@@ -67,7 +76,12 @@ public class DBManager  {
             e.printStackTrace();
         }
     }
+    public static boolean databaseExists()	{
 
+        File storage_file = new File(Environment.getExternalStorageDirectory(), "/RedesDaUniversidade/"+DB_NAME);
+
+        return storage_file.exists();
+    }
 
     public static void createDatabase(String path) {
         db = SQLiteDatabase.openDatabase(path,
@@ -85,9 +99,10 @@ public class DBManager  {
 
 
     }
-    public static synchronized boolean insertDatabase(WifiManage redeInfo, String descricao, Context ctx){
+    public synchronized boolean insertDatabase(WifiManage redeInfo, String descricao, Context ctx){
         boolean res = false;
         SQLiteStatement stm = null;
+        String id = redeInfo.getId(ctx);
         Log.i("Teste INSERT", "bosta");
         db.beginTransaction();
         try {
@@ -100,11 +115,11 @@ public class DBManager  {
                             +coluna_id_aparelho+","
                             +coluna_força +","
                             +coluna_data+")" +
-                            "	values ( NULL,"
-                            + descricao+" ,"
-                            +redeInfo.getId(ctx)+" ,"
-                            +redeInfo.getFreq(ctx)+" ,"
-                            +redeInfo.getDateTime()+")";
+                            "values ( NULL,'"
+                            + descricao+"' ,'"
+                            +id+"' ,"
+                            +redeInfo.getFreq(ctx)+" ,'"
+                            +redeInfo.getDateTime()+"')";
             Log.i("QUERY INSERT", sql);
             stm = db.compileStatement(sql);
 
@@ -116,9 +131,13 @@ public class DBManager  {
                 stm.bindLong(4,redeInfo.getFreq(ctx));
                 stm.bindString(5,redeInfo.getDateTime());*/
                 Log.i("STM", String.valueOf(stm));
-                if (stm.executeInsert() <= 0)
-                    Log.d("Insert", "Failed insertion of event into database");
-
+                if(!id.equals("00:00:00:00:00:00")) {
+                    if (stm.executeInsert() <= 0)
+                        Log.d("Insert", "Failed insertion of event into database");
+                }
+                else{
+                    Toast.makeText(ctx,"Erro, não está ligado a nenhuma rede.",Toast.LENGTH_LONG).show();
+                }
             // Signal success and update result value
             db.setTransactionSuccessful();
             res = true;
@@ -156,7 +175,7 @@ public class DBManager  {
         }
         else {
             Toast.makeText(ctx,"Inseriu um novo id.",Toast.LENGTH_LONG).show();
-
+            Log.i("SQL", sql);
             db.execSQL(sql);
         }
     }

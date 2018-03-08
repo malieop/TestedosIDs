@@ -1,8 +1,12 @@
 package com.example.diogo.testedosids;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -18,8 +22,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DBManager db = new DBManager();
-        db.initDatabase();
+       // REQUEST PERMISSIONS
+        final int Request_Write_External_Storage = 1 ;
+        final int Request_Read_External_Storage = 2 ;
+        /*if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.READ_CONTACTS)
+                != PackageManager.PERMISSION_GRANTED) {
+
+
+
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.READ_CONTACTS},
+                        MY_PERMISSIONS_REQUEST_READ_CONTACTS);
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+
+        }*/
+        if (!DBManager.databaseExists()) {
+            DBManager.initDatabase();
+        }
 
         final Button andarButton = findViewById(R.id.Andar);
         andarButton.setOnClickListener(new View.OnClickListener(){
@@ -51,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         biblioButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Biblioteca",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Biblioteca",getApplicationContext());
             }
         });
         final Button departButton = findViewById(R.id.Depart);
@@ -70,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 WifiInfo wifiInfo = wifiManager.getConnectionInfo();
                 return wifiInfo.getBSSID();*/
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Bar",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Bar",getApplicationContext());
 
             }
         });

@@ -22,7 +22,7 @@ public class DepartActivity extends AppCompatActivity {
                 id = WifiManage.getId(getApplicationContext());
                 Toast.makeText(DepartActivity.this, id, Toast.LENGTH_SHORT).show();
                WifiManage wifi = new WifiManage();
-               DBManager.insereDatabase( wifi, "Departamento0",getApplicationContext());
+               DBManager.getDBManager().insertDatabase( wifi, "Departamento0",getApplicationContext());
 
             }
         });
@@ -34,7 +34,7 @@ public class DepartActivity extends AppCompatActivity {
                 id = WifiManage.getId(getApplicationContext());
                 Toast.makeText(DepartActivity.this, id, Toast.LENGTH_SHORT).show();
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Departamento1",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Departamento1",getApplicationContext());
 
             }
         });
@@ -46,7 +46,7 @@ public class DepartActivity extends AppCompatActivity {
                 id = WifiManage.getId(getApplicationContext());
                 Toast.makeText(DepartActivity.this, id, Toast.LENGTH_SHORT).show();
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Departamento2",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Departamento2",getApplicationContext());
 
             }
         });
@@ -58,7 +58,7 @@ public class DepartActivity extends AppCompatActivity {
                 id = WifiManage.getId(getApplicationContext());
                 Toast.makeText(DepartActivity.this, id, Toast.LENGTH_SHORT).show();
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Departamento Academico",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Departamento Academico",getApplicationContext());
 
             }
         });

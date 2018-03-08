@@ -21,7 +21,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Andar -3",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Andar -3",getApplicationContext());
             }
         });
         final Button andar_2 = findViewById(R.id.a1);
@@ -29,7 +29,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Andar -2",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Andar -2",getApplicationContext());
             }
         });
         final Button andar_1 = findViewById(R.id.a2);
@@ -37,7 +37,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Andar -1",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Andar -1",getApplicationContext());
             }
         });
         final Button andar0 = findViewById(R.id.a3);
@@ -45,7 +45,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Andar 0",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Andar 0",getApplicationContext());
             }
         });
         final Button andar1 = findViewById(R.id.a4);
@@ -53,7 +53,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Andar 1",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Andar 1",getApplicationContext());
             }
         });
         final Button andar2 = findViewById(R.id.a5);
@@ -61,7 +61,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Andar 2",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Andar 2",getApplicationContext());
             }
         });
         final Button andar3 = findViewById(R.id.a6);
@@ -69,7 +69,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Andar 3",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Andar 3",getApplicationContext());
             }
         });
         final Button salaestudo0 = findViewById(R.id.se0);
@@ -77,7 +77,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Sala Estudo 0",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Sala Estudo 0",getApplicationContext());
             }
         });
         final Button salaestudo1 = findViewById(R.id.se1);
@@ -85,7 +85,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Sala Estudo 1",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Sala Estudo 1",getApplicationContext());
             }
         });
         final Button salaestudo2 = findViewById(R.id.se2);
@@ -93,7 +93,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Sala Estudo 2",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Sala Estudo 2",getApplicationContext());
             }
         });
         final Button salaestudo3 = findViewById(R.id.se3);
@@ -101,7 +101,7 @@ public class AndaresActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 WifiManage wifi = new WifiManage();
-                DBManager.insereDatabase( wifi, "Sala Estudo 3",getApplicationContext());
+                DBManager.getDBManager().insertDatabase( wifi, "Sala Estudo 3",getApplicationContext());
             }
         });
 
