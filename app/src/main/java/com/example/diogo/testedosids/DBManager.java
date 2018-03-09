@@ -132,8 +132,13 @@ public final class DBManager  {
                 stm.bindString(5,redeInfo.getDateTime());*/
                 Log.i("STM", String.valueOf(stm));
                 if(!id.equals("00:00:00:00:00:00")) {
-                    if (stm.executeInsert() <= 0)
+                    if (stm.executeInsert() <= 0){
                         Log.d("Insert", "Failed insertion of event into database");
+                    }
+                    else {
+                    Toast.makeText(ctx,"Inseriu um novo id.",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ctx,id,Toast.LENGTH_LONG).show();
+                    }
                 }
                 else{
                     Toast.makeText(ctx,"Erro, não está ligado a nenhuma rede.",Toast.LENGTH_LONG).show();
@@ -175,7 +180,7 @@ public final class DBManager  {
         }
         else {
             Toast.makeText(ctx,"Inseriu um novo id.",Toast.LENGTH_LONG).show();
-            Log.i("SQL", sql);
+            //Log.i("SQL", sql);
             db.execSQL(sql);
         }
     }
